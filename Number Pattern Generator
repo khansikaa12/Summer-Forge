@@ -1,0 +1,13 @@
+def number_pattern(n):
+    if not isinstance(n, int):
+        return("Argument must be an integer value.")
+
+    if n < 1 :
+        return("Argument must be an integer greater than 0.")
+    
+    if isinstance(n,int) : return " ".join(str(i) for i in range(1, n + 1))
+            
+    #Order of conditional statements matters or else if it runs and checks with the first condition it wont go to the next.
+# return exits code after printing but print just prints and heads over to the next line of code.
+
+print(number_pattern(5))
