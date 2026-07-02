@@ -43,5 +43,6 @@ def view_settings(settings):
     else :
         result = "Current User Settings:\n"
         for key,value in settings.items():
+# for loop is needed as we want to edit each and every first letter of keys in dict and "result" acts as an "accumulator" in the loop and "settings.items()" acts as an iterable.
             result += f"{key.capitalize()}: {value}\n"
         return result
