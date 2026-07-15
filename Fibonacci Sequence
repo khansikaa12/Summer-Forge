@@ -1,0 +1,8 @@
+# Fibonacci Sequence
+a = 0
+b = 1
+while True :
+    print(a)
+    c = a
+    a = b
+    b = c + b
